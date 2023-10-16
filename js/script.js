@@ -1,3 +1,28 @@
+const gnomePanel = document.querySelector('.gnome-panel');
+const stadiums = document.querySelectorAll('.stadium');
+
+gnomePanel.addEventListener('click', (e) => {
+  const stadium = e.target.closest('.stadium');
+  if (!stadium || stadium.classList.contains('active')) {
+    return;
+  }
+
+  const activeStadium = document.querySelector('.active');
+  activeStadium.classList.replace('active', 'inactive');
+  stadium.classList.replace('inactive', 'active');
+});
+
+gnomePanel.addEventListener('wheel', (e) => {
+  e.preventDefault();
+  const activeStadium = document.querySelector('.active');
+  if (!activeStadium) return;
+
+  activeStadium.classList.replace('active', 'inactive');
+  const nextStadium = activeStadium.nextElementSibling || stadiums[0];
+  nextStadium.classList.replace('inactive', 'active');
+});
+
+
 let isTerminalOpen = false;
 
 function openTerminalWindow() {
