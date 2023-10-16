@@ -64,16 +64,16 @@ document.addEventListener("mouseup", () => {
 
 
 
-const getIpAddress = async () => {
-    try {
-      const response = await fetch("https://api.ipify.org?format=json");
-      const data = await response.json();
-      return data.ip;
-    } catch (error) {
-      console.error("Error getting IP address:", error);
-      return null;
-    }
-  };
+// const getIpAddress = async () => {
+//     try {
+//       const response = await fetch("https://api.ipify.org?format=json");
+//       const data = await response.json();
+//       return data.ip;
+//     } catch (error) {
+//       console.error("Error getting IP address:", error);
+//       return null;
+//     }
+//   };
   
 //   // Call the function to get the IP address
 // getIpAddress()
