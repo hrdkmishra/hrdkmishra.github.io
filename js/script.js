@@ -75,41 +75,41 @@ const getIpAddress = async () => {
     }
   };
   
-  // Call the function to get the IP address
-getIpAddress()
-.then((ipAddress) => {
-if (ipAddress) {
-    // Use the retrieved IP address to make the API request
-    const apiUrl = `http://worldtimeapi.org/api/ip/${ipAddress}`;
-    fetch(apiUrl)
-    .then((response) => response.json())
-    .then((data) => {
-        const datetime = data.datetime;
-        const parsedDate = new Date(datetime);
+//   // Call the function to get the IP address
+// getIpAddress()
+// .then((ipAddress) => {
+// if (ipAddress) {
+//     // Use the retrieved IP address to make the API request
+//     const apiUrl = `http://worldtimeapi.org/api/ip/${ipAddress}`;
+//     fetch(apiUrl)
+//     .then((response) => response.json())
+//     .then((data) => {
+//         const datetime = data.datetime;
+//         const parsedDate = new Date(datetime);
 
-        const options = {
-        month: "short",
-        day: "2-digit",
-        hour: "2-digit",
-        minute: "2-digit",
-        hour12: true,
-        };
+//         const options = {
+//         month: "short",
+//         day: "2-digit",
+//         hour: "2-digit",
+//         minute: "2-digit",
+//         hour12: true,
+//         };
 
-        const formattedDate = parsedDate.toLocaleString("en-US", options);
-        // remove , after the day and add a space
-        const formattedDateWithoutComma = formattedDate.replace(",", "");
+//         const formattedDate = parsedDate.toLocaleString("en-US", options);
+//         // remove , after the day and add a space
+//         const formattedDateWithoutComma = formattedDate.replace(",", "");
 
-        // Update the content of the gnome-panel-clock element
-        const gnomePanelClock = document.querySelector(".gnome-panel-clock");
-        if (gnomePanelClock) {
-        gnomePanelClock.textContent = formattedDateWithoutComma;
-        }
-    })
-    .catch((error) => {
-        console.error("Error fetching data:", error);
-    });
-} else {
-    console.error("No IP address retrieved.");
-}
-});
+//         // Update the content of the gnome-panel-clock element
+//         const gnomePanelClock = document.querySelector(".gnome-panel-clock");
+//         if (gnomePanelClock) {
+//         gnomePanelClock.textContent = formattedDateWithoutComma;
+//         }
+//     })
+//     .catch((error) => {
+//         console.error("Error fetching data:", error);
+//     });
+// } else {
+//     console.error("No IP address retrieved.");
+// }
+// });
 
