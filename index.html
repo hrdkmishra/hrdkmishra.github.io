@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="css/gnome-panel.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cantarell&display=swap"
+      rel="stylesheet"
+    />
+    <script src="js/script.js"></script>
+  </head>
+  <body>
+    <div class="gnome-panel">
+      <div class="stadium active"></div>
+      <div class="stadium inactive"></div>
+      <div class="stadium inactive"></div>
+      <div class="stadium inactive"></div>
+      <p class="gnome-panel-clock"></p>
+    </div>
+    <div class="linkedin-icon">
+        <a href="https://www.linkedin.com/in/hardik-mishra-aa8b111a9/">
+            <img src="image/linkedin.svg" alt="Github Icon" />
+        </a>
+    </div>
+    <div class="gmail-icon">
+        <a href="mailto:hardikmishra0509@gmail.com">
+            <img src="image/gmail1.svg" alt="Github Icon" />
+        </a>
+    </div>
+    <div class="github-icon">
+        <a href="www.github.com/hrdmishra">
+            <img src="image/github.svg" alt="Github Icon" />
+        </a>
+    </div>
+    <div class="terminal-icon" onclick="openTerminalWindow()">
+        <img src="image/terminal.svg" alt="Terminal Icon" />
+    </div>
+    <div
+        class="custom-terminal"
+        id="draggable-custom-terminal"
+        style="display: none"
+    >
+        <div class="terminal-header" onmousedown="dragWindow(event)">
+        <div class="close-button" onclick="closeTerminalWindow()">
+            <div class="red-circle"></div>
+        </div>
+        </div>
+        <div class="terminal-content">
+        <img src="image/neofetch.png" alt="Terminal Icon" />
+        </div>
+    </div>
+    <div class="download-link">
+        <a href="resume/hardikmishra_resume.pdf" download>
+        <img src="image/Code.svg" alt="Download Resume" />
+        </a>
+        <p>Resume</p>
+    </div>
+    <div class="wallpaper">
+        <img src="image/bg.png" alt="wallpaper" />
+        <!-- <span class="name">Hardik Mishra</span> -->
+      </div>
+  </body>
+</html>
