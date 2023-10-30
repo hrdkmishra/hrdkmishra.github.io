@@ -12,54 +12,59 @@
   </head>
   <body>
     <div class="gnome-panel">
-      <div class="stadium active"></div>
-      <div class="stadium inactive"></div>
-      <div class="stadium inactive"></div>
-      <div class="stadium inactive"></div>
-      <!-- <p class="gnome-panel-clock"></p> -->
+      <span class="animation-workspace">
+        <div class="stadium active"></div>
+        <div class="stadium inactive"></div>
+        <div class="stadium inactive"></div>
+        <div class="stadium inactive"></div>
+      </span>
+      <div class="gnome-panel-clock">hello world</div>
     </div>
+
     <div class="linkedin-icon">
-        <a href="https://www.linkedin.com/in/hardik-mishra-aa8b111a9/" target="_blank">
-            <img src="image/linkedin.svg" alt="Github Icon" />
-        </a>
+      <a
+        href="https://www.linkedin.com/in/hardik-mishra-aa8b111a9/"
+        target="_blank"
+      >
+        <img src="image/linkedin.svg" alt="Github Icon" />
+      </a>
     </div>
     <div class="gmail-icon">
-        <a href="mailto:hardikmishra0509@gmail.com" target="_blank">
-            <img src="image/gmail1.svg" alt="Github Icon" />
-        </a>
+      <a href="mailto:hardikmishra0509@gmail.com" target="_blank">
+        <img src="image/gmail1.svg" alt="Github Icon" />
+      </a>
     </div>
     <div class="github-icon">
-        <a href="https://github.com/hrdkmishra" target="_blank">
-            <img src="image/github.svg" alt="Github Icon" />
-        </a>
+      <a href="https://github.com/hrdkmishra" target="_blank">
+        <img src="image/github.svg" alt="Github Icon" />
+      </a>
     </div>
     <div class="terminal-icon" onclick="openTerminalWindow()">
-        <img src="image/terminal.svg" alt="Terminal Icon" />
+      <img src="image/terminal.svg" alt="Terminal Icon" />
     </div>
     <div
-        class="custom-terminal"
-        id="draggable-custom-terminal"
-        style="display: none"
+      class="custom-terminal"
+      id="draggable-custom-terminal"
+      style="display: none"
     >
-        <div class="terminal-header" onmousedown="dragWindow(event)">
+      <div class="terminal-header" onmousedown="dragWindow(event)">
         <div class="close-button" onclick="closeTerminalWindow()">
-            <div class="red-circle"></div>
+          <div class="red-circle"></div>
         </div>
-        </div>
-        <div class="terminal-content">
+      </div>
+      <div class="terminal-content">
         <img src="image/neofetch.png" alt="Terminal Icon" />
-        </div>
+      </div>
     </div>
     <div class="download-link">
-        <a href="resume/hardikmishra_resume.pdf" download>
+      <a href="resume/hardikmishra_resume.pdf" download>
         <img src="image/Code.svg" alt="Download Resume" />
-        </a>
-        <p>Resume</p>
+      </a>
+      <p>Resume</p>
     </div>
     <div class="wallpaper">
-        <img src="image/gnome1.png" alt="wallpaper" />
-        <!-- <span class="name">Hardik Mishra</span> -->
-      </div>
+      <img src="image/gnome1.png" alt="wallpaper" />
+      <!-- <span class="name">Hardik Mishra</span> -->
+    </div>
   </body>
-  
 </html>
